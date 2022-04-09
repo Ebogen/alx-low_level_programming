@@ -18,17 +18,17 @@ int main(void)
 	if (n > 0)
 	{
 		/* is the value of n positive ? */
-		printf("is positive\n");
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
 		/* is the value of n equal to zero */
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	}
 	else if (n < 0)
 	{
 		/* is the value of n less than zero ? */
-		printf("is negative\n");
+		printf("%d is negative\n", n);
 	}
 	return (0); /* This is a description for return value of  main */
 }
