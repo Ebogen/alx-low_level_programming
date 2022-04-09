@@ -17,8 +17,9 @@ int main(void)
 		if (m != 9)
 		{
 			putchar(',');
-			putchar(',');
+			putchar(' ');
 		}
+		/* a small space here */
 		m++;
 	}
 	putchar('\n');
