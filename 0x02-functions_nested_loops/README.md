@@ -1,0 +1,1 @@
+This is about C, low level language. Task 0x02.C - Functionsn nested loops
