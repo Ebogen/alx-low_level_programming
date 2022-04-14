@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints fizz for int divisible by 3 and buzz for 5
+ * main - prints Fizz for int divisible by 3 and Buzz for 5
  *
  * Return: int
  */
@@ -22,7 +22,7 @@ int main(void)
 		}
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("Fizzbuzz");
+			printf("FizzBuzz");
 		}
 		else
 		{
