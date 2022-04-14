@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _isupper - checkers upper case
  * @c: print int
@@ -11,6 +12,7 @@ int _isupper(int c)
 	{
 		return (1);
 	}
+
 	else
 	{
 		return (0);
