@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-void reset_to_98(int *n)
+void reset_to_98(n)
 {
 	int n;
 
@@ -14,5 +14,5 @@ void reset_to_98(int *n)
 	reset_to_98(&n);
 	_putchar("n=%d\n", n);
 
-	return (0);
+	_putchar ('\n');
 }
