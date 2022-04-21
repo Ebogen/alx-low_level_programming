@@ -9,12 +9,5 @@
 
 void reset_to_98(int *n)
 {
-	int m;
-	/* this is a blank space */
-	m = 402;
-	n = &m;
-	_putchar("n=%d\n", m);
 	*n = 98;
-	_putchar("n=%p\n", m);
-	_putchar ('\n');
 }
