@@ -10,8 +10,8 @@ int _strlen(char *s)
 {
 	int i = 0;
 
-	while {s[i]}
-	i++;
-
+	while (s[i])
+		i++;
+	/* This is a blank line */
 	return (i);
 }
