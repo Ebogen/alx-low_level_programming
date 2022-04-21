@@ -3,14 +3,14 @@
  * reset_to_98 - write a function that takes a pointer to an int as parameter
  * and updates the value it points to 98.
  *
+ * @n: integers
  * Return: Always 0.
  */
 
 void reset_to_98(int *n)
 {
 	int m;
-	int *n;
-
+	/* this is a blank space */
 	m = 402;
 	n = &m;
 	_putchar("n=%d\n", m);
