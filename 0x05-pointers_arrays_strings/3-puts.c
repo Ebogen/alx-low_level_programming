@@ -4,7 +4,7 @@
  * _puts - prints a string
  * @str: string
  *
- * Return: always 0
+ * Return: nothing
  */
 
 void _puts(char *str)
@@ -13,8 +13,8 @@ void _puts(char *str)
 
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
-		i++;
+	_putchar(str[i]);
+	i++;
 	}
-	_putchar ('\n');
+	_putchar('\n');
 }
