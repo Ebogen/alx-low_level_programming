@@ -12,5 +12,6 @@ void swap_int(int *a, int *b)
 	int temp;
 	/* this is a blank space */
 	temp = *a;
+	*a = *b;
 	*b = temp;
 }
