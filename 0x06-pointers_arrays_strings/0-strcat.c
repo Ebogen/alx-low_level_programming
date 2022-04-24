@@ -10,7 +10,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char s1[98] = "src";
+	char s1[] = "src";
 	char s2[] = "dest\n";
 	char *ptr;
 
