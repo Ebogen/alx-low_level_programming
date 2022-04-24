@@ -14,7 +14,7 @@ char *_strcat(char *dest, char *src)
 	char s2[] = "dest\n";
 	char *ptr;
 
-	ptr = _strcat(s1, s2);
+	ptr = strcat(s1, s2);
 
 	return (ptr);
 }
