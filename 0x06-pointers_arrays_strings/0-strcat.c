@@ -10,11 +10,11 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char s1[] = "src";
+	char s1[] = "src\n";
 	char s2[] = "dest\n";
 	char *ptr;
 
-	ptr = strcat(s1, s2);
+	ptr = _strcat(s1, s2);
 
-	return (ptr);
+	return (dest);
 }
