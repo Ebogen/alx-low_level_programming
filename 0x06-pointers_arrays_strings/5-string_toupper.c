@@ -11,7 +11,7 @@ char *string_toupper(char *s)
 {
 	int count = 0;
 	/* This is a blank space */
-	while *(s + count) != '\0')
+	while (*(s + count) != '\0')
 	{
 
 		if ((*(s + count) >= 97) && (*(s + count) <= 122))
@@ -20,3 +20,4 @@ char *string_toupper(char *s)
 	}
 
 	return (s);
+}
