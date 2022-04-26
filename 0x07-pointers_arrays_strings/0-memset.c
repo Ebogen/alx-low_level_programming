@@ -6,8 +6,9 @@
  * @s: pointer block to the memory to be filled
  * @b: value to set
  * @n: bytes of the memory
- * Return: nothing
+ * Return: dest
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
