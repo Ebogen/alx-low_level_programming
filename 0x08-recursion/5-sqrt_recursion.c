@@ -4,22 +4,28 @@
  * _sqrt_recursion - a function that returns the natural
  *                   square root of a number
  * @n: a natural number
- * @root: a natural number
- * Return: root of a natural number or -1 if the not a natural root
+ * Return: root of a natural number
  */
 
-int _sqrt_recursion(int n, int root)
+int _sqrt_recursion(int n)
 {
-	if (root * root > n)
-	{
+	return (_recursion(n, 1));
+}
+
+/**
+ * _recursion - finds  natural square root of n
+ * @root: integer parameter
+ * @n: integer parameter
+ * Return: _recursion
+ */
+
+int _recursion(int n, int root)
+{
+	if (n < 0)
 		return (-1);
-	}
-	if (root * root < n)
-	{
+	if ((root * root) > n)
 		return (-1);
-	}
-	if (root * root == n)
-	{
-		return (_sqrt_recursion(root, n));
-	}
+	if ((root * root) == n)
+		return (root);
+	return (_recursion(n, root + 1));
 }
