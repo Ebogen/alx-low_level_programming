@@ -19,7 +19,7 @@ int _strlen_recursion(char *s)
  * m1 - palindrome
  * @s: pointer to string
  * @l: position
- * Return: boolean
+ * Return: string
  */
 
 int m1(char *s, int l)
@@ -35,6 +35,8 @@ int m1(char *s, int l)
 	{
 		return (m1(s + 1, l - 2));
 	}
+
+	return (0);
 }
 
 /**
