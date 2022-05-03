@@ -12,7 +12,8 @@
 int main(int argc, char *argv[])
 {
 
-	int i, j, sum = 0;
+	int i, j;
+	int sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -20,8 +21,8 @@ int main(int argc, char *argv[])
 		{
 			if (!isdigit(argv[i][j]))
 			{
-				printf("Error\n")
-					return (1);
+				printf("Error\n");
+				return (1);
 			}
 		}
 		sum += atoi(argv[i]);
