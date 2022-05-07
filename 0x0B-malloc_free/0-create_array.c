@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlb.h>
 
 /**
  * create_array - creates array
- * @size: param
- * @c: param
- * Return: char
+ * @size: size of the array
+ * @c: stores char
+ * Return: pointer to array of char
  */
 
 char *create_array(unsigned int size, char c)
