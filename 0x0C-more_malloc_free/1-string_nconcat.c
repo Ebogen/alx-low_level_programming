@@ -3,49 +3,66 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - a function that contatenates two strings
- * @s1: first string
- * @s2: second string
+ * _strlen - returns the lenght of a string
+ * @s: a string
+ * Return: number of chararcter in a string
+ */
+
+int _strlen(char *s)
+{
+	int lenght = 0;
+
+	for (; *s; s++)
+	{
+		lenght++;
+	}
+	return (lenght);
+
+}
+
+/**
+ * string_nconcat - a function that concatenates two strings
+ * @s1: a string
+ * @s2: another string
  * @n: an integer
- * Return: pointer that points to a newly allocated space or if fail, NULL
+ * Return: pointer to the concatenated string or if fail, NULL
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len1, len2 = 0;
-	unsigned int i, j;
-
-	char *str_copy;
-	char *tmp1 = s1;
+	int len1;
+	int len2;
+	int sign_n = n;
+	int i;
+	char *cnt;
 
 	if (s1 == NULL)
-		s1 = "";
+		len1 = 0;
+	else
+		len1 = _strlen(s1);
 
 	if (s2 == NULL)
-		s2 = "";
+		len2 = 0;
+	else if (sign_n > _strlen(s2))
+		len2 = _strlen(s2);
+	else
+		len2 = n;
 
-	i = 0;
-	while (*s1++)
-		i++;
-	len1 = i;
-	s1 = tmp1;
-	lens2 = n;
-	str_copy = malloc((len1 + len2) * sizeof(char) + 1);
-	if (str_copy == NULL)
+	cnt = malloc(sizeof(char) * ((len1 + len2) + 1));
+
+	if (cnt == NULL)
 		return (NULL);
 
-	j = 0;
-	while (j < len1)
+	for (i = 0; i < len1; i++)
 	{
-		str_copy[j] = s1[j];
-		j++;
+		cnt[i] = s1[i];
+	}
+	for (i = 0; i < len2; i++)
+	{
+		cnt[len1 + i] = s2[i];
 	}
 
-	while (j < len1 + len2)
-	{
-		j++;
-	}
+	cnt[len1 + len2] = '\0';
 
-	str_copy[j] = '\0';
-	return (str_copy);
+	return (cnt);
 }
