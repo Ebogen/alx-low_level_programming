@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int find_len(char *str);
-char *create_xarray(int size);
-char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
 
@@ -81,7 +78,6 @@ int get_digit(char c)
 		printf("Error\n");
 		exit(98);
 	}
-
 	return (digit);
 }
 
@@ -144,7 +140,8 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 void add_nums(char *final_prod, char *next_prod, int next_len)
 {
-	int num, tens = 0;
+	int num;
+	int tens = 0;
 
 	while (*(final_prod + 1))
 		final_prod++;
@@ -180,7 +177,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 }
 
 /**
- * main - a function that multiplies tqo positive numbers
+ * main - a function that multiplies two positive numbers
  * @argv: The number of arguments passed to the program
  * @argc: an array of pointers to the arguments
  * Descrip: if the number of the arguments is incorrect or one number contains
@@ -190,8 +187,9 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 int main(int argc, char *argv[])
 {
-	char *final_prod, *next_prod;
-	int size, index, digit, zeroes = 0;
+	char *final_prod, char *next_prod;
+	int size, index, digit;
+	int zeroes = 0;
 
 	if (argc != 3)
 	{
@@ -226,9 +224,7 @@ int main(int argc, char *argv[])
 			putchar(final_prod[index]);
 	}
 	putchar('\n');
-
 	free(next_prod);
 	free(final_prod);
-
 	return (0);
 }
