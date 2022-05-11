@@ -54,7 +54,7 @@ char *create_xarray(int size)
  * iterate_zeroes - a function that iterates through a string of numbers con-
  *                  taining leading zeroes until it hits a non-zero number.
  * @str: The string of numbers to iterate through
- * Return: a poninter to the next non-zero element
+ * Return: a pointer to the next non-zero element
  */
 
 char *iterate_zeroes(char *str)
@@ -144,8 +144,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 void add_nums(char *final_prod, char *next_prod, int next_len)
 {
-	int num;
-	int tens = 0;
+	int num, tens = 0;
 
 	while (*(final_prod + 1))
 		final_prod++;
@@ -191,9 +190,8 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 int main(int argc, char *argv[])
 {
-	char *final_prod, char *next_prod;
-	int size, index, digit;
-	int zeroes = 0;
+	char *final_prod, *next_prod;
+	int size, index, digit, zeroes = 0;
 
 	if (argc != 3)
 	{
@@ -228,6 +226,7 @@ int main(int argc, char *argv[])
 			putchar(final_prod[index]);
 	}
 	putchar('\n');
+
 	free(next_prod);
 	free(final_prod);
 
