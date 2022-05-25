@@ -2,6 +2,7 @@
 #define _LISTS_H_
 
 #include <stddef.h>
+#include <stdio.h>
 
 typedef struct list_t{
 	char *str;
