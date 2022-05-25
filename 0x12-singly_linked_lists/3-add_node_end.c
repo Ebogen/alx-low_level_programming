@@ -1,13 +1,13 @@
-#include "lists.h"
+#include <stdlib.h>
 #include <string.h>
-#include < stdlib.h>
+#include "lists.h"
 
 /**
- * _strlen - a function that finds the lenght of a string
+ * _strlen - a function that finds the length of a string
  * @str: string
- * Return: the lenght of a string
+ *
+ * Return: length of string
  */
-
 unsigned int _strlen(char *str)
 {
 	unsigned int i;
@@ -18,13 +18,12 @@ unsigned int _strlen(char *str)
 }
 
 /**
- * add_node_end - a function that adds a node to the end of
- *                a linked list
- * @head: double pointer linked list
- * @str: string
+ * add_node_end - a funciton that adds a new node to the end of linked list
+ * @head: double pointer to a linked list
+ * @str: string to add to the new node
+ *
  * Return: pointer to the new node
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new, *tmp;
@@ -47,8 +46,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new;
 		return (new);
 	}
-	tmp *head;
-
+	tmp = *head;
 	while (tmp->next)
 		tmp = tmp->next;
 	tmp->next = new;
