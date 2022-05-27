@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * _realloc - a function that reallocates memory for an array of pointers
+ * _r - a function that reallocates memory for an array of pointers
  *            to the nodes in a linked list
  * @list: old list
  * @size: size of new list
@@ -11,8 +11,7 @@
  * Return: pointer to list
  */
 
-const listint_t **_realloc(const listint_t **list, size_t size, const listint_t
-			   *new)
+const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 {
 	const listint_t **newlist;
 	size_t i;
@@ -53,7 +52,7 @@ size_t print_listint_safe(const lsitint_t *head)
 			}
 		}
 		num++;
-		list = _realloc(list, num, head);
+		list = _r(list, num, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
