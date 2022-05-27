@@ -1,4 +1,4 @@
-int delete_nodeint_at_index(listint_t **head, unsigned int index)#ifndef _LISTS_H_
+#ifndef _LISTS_H_
 #define _LISTS_H_
 
 #include <stddef.h>
