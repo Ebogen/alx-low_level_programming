@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * find_listint_loop - a function that finds loops in a linked list
