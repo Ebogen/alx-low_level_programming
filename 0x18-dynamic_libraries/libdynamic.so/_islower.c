@@ -1,14 +1,13 @@
-#!/bin/bash
 #include "main.h"
 
 /**
- * _isalpha - a function
+ * _islower - a function
  * @c: a string
  * Return: nothing
  *
  */
 
-int _isalpha(int c)
+int _islower(int c)
 {
 
 

@@ -1,5 +1,4 @@
-#!/bin/bash
-#inlclude "main.h"
+#include "main.h"
 /**
  * _strlen - a function
  * @s: a string
