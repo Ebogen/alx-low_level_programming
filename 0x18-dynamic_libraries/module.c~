@@ -1,0 +1,12 @@
+#include "mainn.h"
+
+/**
+ * module - a function
+ * @a: an integer
+ * @b: an integer
+ * Return: module of an integer
+ */
+int module(int a , int b)
+{
+	return(a % b);
+}

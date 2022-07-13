@@ -1,0 +1,12 @@
+#include "mainn.h"
+
+/**
+ * divide - a function
+ * @a: an integer
+ * @b: an integer
+ * Return: the value of an integer dividing another
+ */
+int divide(int a, int b)
+{
+	return(a / b);
+}

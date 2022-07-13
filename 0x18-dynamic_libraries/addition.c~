@@ -1,0 +1,12 @@
+#include "mainn.h"
+
+/**
+ * add - a function that adds two numbers
+ * @a: an integer
+ * @b: an integer
+ * Return: the addition of two numbers
+ */
+int add(int a, int b)
+{
+	return (a+b);
+}
